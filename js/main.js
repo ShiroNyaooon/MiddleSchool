@@ -277,7 +277,7 @@ function mainLogic() {
 					$('#fadeLayer').hide();
 					setting.wait = false;
 				}, 150);
-			}, 0);
+			}, 300);
 		}
 		else if(setting.mode === 5) {
 			setting.wait = true;
