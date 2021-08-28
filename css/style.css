@@ -1,0 +1,648 @@
+/***********************************************************
+	ブロック
+************************************************************/
+body {
+	color:black;
+	background-color:white;
+	/*background-color: rgb(42, 21, 100);*/
+	/*background-color:rgb(0, 0, 0);*/
+}
+
+.parallel {
+	animation: bgchange 2s ease infinite;
+}
+
+.parallel2 {
+	background-color:#150000;
+	color: #511111;
+}
+
+@keyframes bgchange{
+	0%   {background:#800000;}/*変化させたい色*/
+	50%  {background:#400000;}/*変化させたい色*/
+	100% {background:#800000;}/*変化させたい色*/
+}
+
+header {
+	/*
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	*/
+	width: auto;
+	padding: 10px 00px 10px 20px;
+}
+
+main {
+	z-index: 100;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+}
+
+footer div {
+	margin: 10px;
+}
+
+
+/***********************************************************
+	セクション
+************************************************************/
+section {
+	max-width: 1024px;
+}
+
+hr {
+	margin: 8px 0px;
+}
+
+/***********************************************************
+	見出しタグ
+************************************************************/
+H1 {
+	/*font-size: 1.8em;*/
+	font-family: Meiryo;
+	font-size: 2.4em;
+	font-weight: bold;
+	color: #232323;
+	height: 64px;
+	line-height: 64px;
+}
+
+#siteNm {
+	margin-left: 15px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+H2 {
+	/*font-size: 1.5em;
+	font-weight: bold;*/
+	color:#0057AD;
+	border-bottom:1px dotted #9A8080;
+	border-left:6px solid #2E3B7D;
+	font-size: 110%;
+	padding-left:0.5em;
+	margin-bottom:0.8em;
+}
+
+H3 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+P {
+	margin: 1px 7px 7px 7px;
+	line-height: 130%;
+}
+
+/***********************************************************
+	ロゴ
+************************************************************/
+#imgLogo {
+	width: 80px;
+	height: auto;
+}
+
+/***********************************************************
+	メニュー
+************************************************************/
+.headerStyle {
+	width: 100%;
+	background: #0D0F11;
+	background: -moz-linear-gradient(top, #475E9A 0%, #0D0F11 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#475E9A), color-stop(100%,#0D0F11));
+	background: -webkit-linear-gradient(top, #475E9A 0%,#0D0F11 100%);
+	background: -o-linear-gradient(top, #475E9A 0%,#0D0F11 100%);
+	background: -ms-linear-gradient(top, #475E9A 0%,#0D0F11 100%);
+	background: linear-gradient(top, #475E9A 0%,#0D0F11 100%);
+}
+
+.btn {
+	height:24px;
+	line-height: 24px;
+	padding: 4px 12px 4px 12px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.ParallelColor {
+	background-color: #350000;
+}
+
+.btn:hover {
+	background-color: #475E9A;
+}
+
+.parallel2:hover {
+	background-color: #150000;
+}
+
+/***********************************************************
+	メインビジュアル
+************************************************************/
+#mainvisual {
+	position: relative;/*相対配置*/
+}
+
+#mainvisual img {
+	width: 100%;
+	object-fit: cover;	
+}
+
+#mainvisual H1 {
+	position: absolute;/*絶対配置*/
+	color: white;/*文字は白に*/
+	top: 10px;
+	left: 10px;
+	}
+
+#mainvisual p {
+	position: absolute;/*絶対配置*/
+	color: white;/*文字は白に*/
+	right: 10px;
+	bottom: 10px;
+}
+
+
+/***********************************************************
+	幅
+************************************************************/
+.widthAuto {
+	width: auto;
+}
+
+.width1 {
+	width: 100%;
+}
+
+.width1in2 {
+	width: 50%;
+}
+
+.width1in3 {
+	width: calc(100% / 3);
+}
+
+.width2in3 {
+	width: calc(100% / 3 * 2);
+}
+
+.width1in4 {
+	width: 25%;
+}
+
+
+/***********************************************************
+	角を丸める
+************************************************************/
+.radius {
+	border-radius: 16px;
+}
+
+.radiusRound {
+	border-radius: 5px;
+}
+
+.radiusCircle {
+	border-radius: 50%;
+}
+
+.radiusCircleEx {
+	border-radius: 9999px;
+}
+
+/***********************************************************
+	罫線
+************************************************************/
+.borderTopNone {
+	border-top-style: hidden;
+}
+
+.borderRightNone {
+	border-right-style: hidden;
+}
+
+.borderBottomNone {
+	border-bottom-style: hidden;
+}
+
+.borderBotLeftNone {
+	border-left-style: hidden;
+}
+
+
+/***********************************************************
+	余白	上 | 右 | 下 | 左
+	Example1:	margin: 10px 0px 10px 0px;
+	Example2:	margin-top: 0px; 
+	Example3:	margin-right: 0px;
+	Example4:	margin-bottom: 0px;
+	Example5:	margin-left: 0px;
+	Example6:	padding: 10px 0px 10px 0px;
+	Example7:	padding-top: 0px; 
+	Example8:	padding-right: 0px;
+	Example9:	padding-bottom: 0px;
+	Example10:	padding-left: 0px;
+************************************************************/
+.margin0 {
+	margin: 0px;
+
+}
+.margin10 {
+	margin: 10px;
+}
+
+.padding10 {
+	padding: 10px;
+}
+
+.marginBtm10 {
+	margin-bottom: 10px;
+}
+
+.marginRight10 {
+	margin-right: 10px;
+}
+
+
+/***********************************************************
+	背景色
+	Example1:	background-color: white;
+	Example2:	background-color: #00ff00;
+	Example3:	background-color: rgb(214, 122, 127);
+	Example4:	background-color: #00ff0080; ※50%透過
+	Example5:	background-color: rgb(214, 122, 127, 0.5); ※50%透過
+************************************************************/
+/* 背景色（白）*/
+.bgColorWhite {
+	background-color: white;
+}
+
+/* 背景色（黒）*/
+.bgColorBlack {
+	background-color: black;
+}
+
+/* 背景色（薄い灰色）*/
+.bgColorEEE {
+	background-color: #eee;
+}
+
+/***********************************************************
+	読み取り専用
+************************************************************/
+input:read-only, textarea:read-only {
+	background-color: #eee;
+}
+
+
+
+/***********************************************************
+	文字色
+	Example1:	color: white;
+	Example2:	color: #00ff00;
+	Example3:	color: rgb(214, 122, 127);
+	Example4:	color: #00ff0080; ※50%透過
+	Example5:	color: rgb(214, 122, 127, 0.5); ※50%透過
+************************************************************/
+/* 文字色（白）*/
+.colorWhite {
+	color: white;
+}
+
+/* 文字色（黒）*/
+.colorBlack {
+	color: black;
+}
+
+/* 文字色（赤）*/
+.colorRed {
+	color: red;
+}
+
+/* 初期表示する内容 */
+::placeholder {
+	color: red;
+}
+
+.colorR1 {
+	color: rgb(229, 52, 132);
+	font-size: 1.5em;
+}
+
+.colorR2 {
+	color: rgb(244, 49, 138);
+	font-size: 1.8em;
+}
+
+
+
+/***********************************************************
+	文字装飾
+************************************************************/
+/* 文字に取り消し線 */
+.strTorikeshi {
+	text-decoration: line-through;
+}
+
+/* 文字に下線（白） */
+.UnderlineWhite {
+	display: inline-block;
+	border-bottom: solid 1px white;
+}
+
+/* 文字に下線（黒） */
+.UnderlineBlack {
+	display: inline-block;
+	border-bottom: solid 1px black;
+}
+
+/* 文字に下線（リンク） */
+.UnderlineRed {
+	display: inline-block;
+	border-bottom: solid 1px red;
+}
+
+/* 文字をリンク風 */
+.HyperLink {
+	cursor: pointer;
+	color: #0033cc;
+	text-decoration: underline;
+}
+
+
+/***********************************************************
+	ボタン装飾
+************************************************************/
+.btn100px {
+	padding: 8px 0px 8px 0px;
+	width: 100px;
+}
+
+/***********************************************************
+	水平方向の配置位置
+************************************************************/
+.alignCenter {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+/***********************************************************
+	グループボックス
+************************************************************/
+.groupFull {
+	border: 1px solid #e6e6e6;
+	margin: 10px;
+	padding: 20px;
+}
+
+.group {
+	background-color: white;
+	border: 1px solid #e6e6e6;
+	padding: 20px;
+	margin: 10px;
+	width: 90%;
+}
+
+.group > div , textarea{
+	/* カスタム */
+	max-width: 100%;
+	width: 100%;
+	resize: vertical;
+}
+
+/***********************************************************
+	フレックスボックス
+************************************************************/
+/* 画面幅がPC:横並び、画面幅がスマホ:縦並び */
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+		-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+}
+
+.flex2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+		-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+}
+
+.flex3 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+		-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+}
+
+.activity {
+	width: 50%;
+}
+
+.flexHorizontal {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		    flex-direction: row;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+}
+
+.flexHorizontalWrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		    flex-direction: row;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+}
+
+.flexVertical {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		    flex-direction: column;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+}
+
+/***********************************************************
+	フレックスボックスの位置
+************************************************************/
+.flex-left {
+	/* 左寄せ */
+	justify-content: flex-start;
+}
+
+.flex-center {
+	/* 中央寄せ */
+	justify-content: center;
+}
+
+.flex-right {
+	/* 右寄せ */
+	justify-content: flex-end;
+}
+
+.flex-between {
+	/* 先頭から順に並べ、最後のみ末尾に配置 */
+	justify-content: space-between;
+}
+
+.flex-around {
+	/* 均等に配置 */
+	justify-content: space-around;
+}
+
+/***********************************************************
+	タブレット(縦)
+************************************************************/
+@media screen and (max-width: 650px) {
+
+	/* フレックスボックス（画面幅がPC:横並び、画面幅がスマホ:縦並び） */
+	.flex {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+			-ms-flex-wrap: nowrap;
+				flex-wrap: nowrap;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.flex2, .flex3 {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+				flex-direction: column;
+			-ms-flex-wrap: nowrap;
+				flex-wrap: nowrap;
+	}
+
+	.scheduleForm, .activity {
+		width: 100%;
+	}
+}
+
+/***********************************************************
+	見出し装飾
+************************************************************/
+#logo {
+	width: 90%;
+}
+
+#gameWindow {
+	position: relative;
+}
+
+#pageClassroom {
+	position: relative;
+}
+
+#imgBack, #imgBack2, #imgSerif {
+	width: 100%;
+}
+
+#imgSerif {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+#fadeLayer {
+	position:absolute;
+	top:0px;
+	left:0px;
+  
+	width:100%;
+	height:100%;
+
+	background-color:#000000;
+	opacity:0.7;
+	/*visibility:hidden;*/
+	z-index:1;
+}
+
+
+
+/***********************************************************
+	モーダル
+************************************************************/
+#modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color:#e6e6e6;
+	width:350px;
+	height:20%;
+	z-index:2;
+	border-radius: 5px;
+	border: 2px solid #000000;
+}
+
+#modalText{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width:100%;
+}
+
+
